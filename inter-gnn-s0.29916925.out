@@ -1,0 +1,15 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[train_single] method=gnn  seed=0  episodes=30000  ckpt_dir=/projects/amfa5003/tangram-intermediate/checkpoints/gnn
+[GNN] Resuming from /projects/amfa5003/tangram-intermediate/checkpoints/gnn/checkpoint_ep0029999.pth
+[GNN] episodes=30000  start_ep=30000  ckpt_dir=/projects/amfa5003/tangram-intermediate/checkpoints/gnn
+[GNN] checkpoint saved → ep=29999
+[GNN] Done. Models saved to /projects/amfa5003/tangram-intermediate/checkpoints/gnn/
+Traceback (most recent call last):
+  File "/projects/amfa5003/tangram-intermediate/train_single.py", line 141, in <module>
+    main()
+  File "/projects/amfa5003/tangram-intermediate/train_single.py", line 115, in main
+    _, best_model = TRAIN[args.method](
+ValueError: too many values to unpack (expected 2)
